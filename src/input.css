@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hamburger-line {
+  @apply block bg-dark w-[30px] h-[2px] my-2;
+}
