@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Navbar Bar */
+.navbar-fixed {
+  @apply fixed shadow-md bg-white bg-opacity-70;
+  backdrop-filter: blur(5px);
+}
+
+/* Hamburger Style */
 .hamburger-line {
   @apply block bg-dark w-[30px] h-[2px] my-2;
 }
