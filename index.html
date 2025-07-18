@@ -28,7 +28,7 @@
               id="hamburger"
               name="hamburger"
               type="button"
-              class="block absolute right-4"
+              class="block absolute right-4 md:hidden"
             >
               <span
                 class="hamburger-line origin-top-left transition duration-300"
@@ -40,6 +40,50 @@
             </button>
 
             <!-- Navigation Menu -->
+            <nav
+              id="nav-menu"
+              class="absolute right-4 top-full w-full max-w-[150px] bg-white py-4 px-4 rounded-lg shadow-lg hidden md:block md:max-w-fit md:top-auto md:shadow-none md:bg-transparent"
+            >
+              <ul
+                class="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-8"
+              >
+                <!-- Home -->
+                <li>
+                  <a
+                    href="#home"
+                    class="font-medium text-base text-dark hover:text-primary"
+                    >Home</a
+                  >
+                </li>
+
+                <!-- About -->
+                <li>
+                  <a
+                    href="#about"
+                    class="font-medium text-base text-dark hover:text-primary"
+                    >About</a
+                  >
+                </li>
+
+                <!-- Project -->
+                <li>
+                  <a
+                    href="#project"
+                    class="font-medium text-base text-dark hover:text-primary"
+                    >Project</a
+                  >
+                </li>
+
+                <!-- Contact -->
+                <li>
+                  <a
+                    href="#contact"
+                    class="font-medium text-base text-dark hover:text-primary"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
