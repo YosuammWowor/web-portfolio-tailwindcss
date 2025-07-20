@@ -402,7 +402,14 @@
         </div>
 
         <div class="w-full px-4 md:w-10/12 mx-auto">
-          <form>
+          <form
+            action="https://formsubmit.co/07d820485e060f7319f95eba55c2df3b"
+            method="POST"
+            target="_blank"
+          >
+            <!-- Template Email (Formsubmit) -->
+            <input type="hidden" name="_template" value="table" />
+
             <!-- Name -->
             <div class="w-full mb-4">
               <label
@@ -412,8 +419,10 @@
               >
               <input
                 id="name"
+                name="name"
                 type="text"
-                class="block w-full p-2 bg-slate-200 text-dark rounded-lg"
+                required
+                class="block w-full p-2 bg-slate-200 font-medium text-dark rounded-lg"
               />
             </div>
 
@@ -426,8 +435,10 @@
               >
               <input
                 id="email"
+                name="email"
                 type="email"
-                class="block w-full p-2 bg-slate-200 text-dark rounded-lg"
+                required
+                class="block w-full p-2 bg-slate-200 font-medium text-dark rounded-lg"
               />
             </div>
 
@@ -439,17 +450,19 @@
                 >Message</label
               >
               <textarea
-                id="email"
-                type="email"
-                class="block w-full p-2 h-32 bg-slate-200 text-dark rounded-lg resize-none"
+                id="message"
+                name="message"
+                type="text"
+                required
+                class="block w-full p-2 h-32 bg-slate-200 font-medium text-dark rounded-lg resize-none"
               ></textarea>
             </div>
 
             <button
-              type="button"
+              type="submit"
               class="w-full text-white bg-primary text-base py-2 rounded-lg"
             >
-              Kirim
+              Send
             </button>
           </form>
         </div>
